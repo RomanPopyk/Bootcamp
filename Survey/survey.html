@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <div class="container">
+        <form action="action_page.php">
+      
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." minlength="2" required>
+            </div>
+        
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            </div>
+            
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Email address" name="mail" required>
+            </div>
+            
+            <div>
+                <label for="pass">Password (10 characters minimum):</label>
+            <input type="password" id="pass" name="password"  minlength="10" required>
+            </div>
+
+            <label for="start">Date of birth:</label>
+            <input type="date" id="birthday" name="birthday">
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="uk" selected>United Kingdom</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <fieldset>
+                <legend>Select gender:</legend>
+            
+                <div>
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">Male</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose the languages that you speak:</legend>
+            
+                <div>
+                  <input type="checkbox" id="english" name="english">
+                  <label for="english">English</label>
+                </div>
+            
+                <div>
+                  <input type="checkbox" id="french" name="french">
+                  <label for="french">French</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="spanish" name="spanish">
+                    <label for="spanish">Spanish</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="german" name="german">
+                    <label for="german">German</label>
+                  </div>
+            </fieldset>
+
+            <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px; width:500px" maxlength="1000" required></textarea>
+            
+            <div>
+                <input type="submit" value="Send Survey">
+                <input type="reset" value="Reset">
+            </div>
+
+</body>
+</html>
