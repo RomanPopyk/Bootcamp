@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+}
+.banner {
+    background-image: url(Files/banner.jpg);
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.banner-text {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    color: white;
+    font-size: bold;
+}
+h2 {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+}
+.flex-image {
+    width: 200px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
