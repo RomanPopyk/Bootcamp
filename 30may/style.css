@@ -1,0 +1,18 @@
+body {
+    background-color: #fa8c02;
+}
+content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    border: 1px solid;
+    border-color: #42413f;
+    box-sizing: border-box;
+    font-family: customSerif;
+}
+@font-face {
+    font-family: customSerif;
+    src: url(custom-serif.woff2);
+  }
