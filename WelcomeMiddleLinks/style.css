@@ -7,6 +7,8 @@ body {
     padding: 1rem;
     height: 100vh;
     width: 100vw;
+    font-family: customSerif;
+    color: #42413f;
 }
 .outsideContent {
     border: 3px solid;
@@ -15,8 +17,10 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+
 }
 .innerContent {
     padding: 20px;
@@ -24,13 +28,20 @@ body {
     height: 150px;
     border: 3px solid;
     border-color: #42413f;
-    font-family: customSerif;
     font-size: 3rem;
-    color: #42413f;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+a {
+    font-size: 1.5rem;
+}
+ul
+.topLinks {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
 }
 @font-face {
     font-family: customSerif;
