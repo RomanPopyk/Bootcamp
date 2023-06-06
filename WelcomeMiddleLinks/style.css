@@ -18,9 +18,7 @@ body {
     height: 100%;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
 }
 .innerContent {
     padding: 20px;
@@ -31,17 +29,25 @@ body {
     font-size: 3rem;
     text-align: center;
     display: flex;
+    align-self: center;
     align-items: center;
     justify-content: center;
 }
 a {
     font-size: 1.5rem;
+    color: #42413f;
 }
-ul
+ul {
+    list-style-type: none;
+    padding: 1rem;
+}
 .topLinks {
     display: flex;
-    flex-direction: row;
-    align-content: space-evenly;
+    justify-content: space-between;
+}
+.bottomLinks {
+    display: flex;
+    justify-content: space-between;
 }
 @font-face {
     font-family: customSerif;
