@@ -1,0 +1,42 @@
+* {
+    background-image: linear-gradient( 135deg, #FFA8A8 10%, #FCFF00 100%);
+}
+
+/**Ball**/
+
+.bouncingball {
+    width:140px;
+    height:140px;
+    border-radius:100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,182,253,1) 100%);
+    animation: bounce 1s;
+    transform: translateY(0px);
+    animation-iteration-count: infinite;
+    position:absolute;
+    margin:50px;
+  }
+  
+  /**Movement**/
+  
+  @keyframes bounce {
+    0% {top: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+    40% {}
+    50% {top: 140px;
+      height: 140px;
+      -webkit-animation-timing-function: ease-out;
+    }
+    55% {top: 160px; height: 120px; 
+      -webkit-animation-timing-function: ease-in;}
+    65% {top: 120px; height: 140px; 
+      -webkit-animation-timing-function: ease-out;}
+    95% {
+      top: 0;   
+      -webkit-animation-timing-function: ease-in;
+    }
+    100% {top: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
