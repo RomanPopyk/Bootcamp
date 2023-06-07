@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    min-width: 40rem;
+}
+.menu{
+    display: flex;
+    /* You could also use
+    flex-wrap: wrap; */
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    /* Previous code
+    gap: 2rem; */
+    height: 7rem;
+    list-style-type: none;
+    background-color: #A4303F;
+    margin: 0;
+}
+a {
+    color: white;
+    background-color:#95B8D1;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 0.9rem 2rem;
+}
+a:hover {
+    color: red;
+    background-color: white;
+    text-transform: uppercase;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 150px;
+    grid-auto-columns: 25%;
+    margin: 0 auto;
+    width: 100%;
+}
+.grid-container div {
+    border: 1px solid white;
+}
+.special1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1 / 3;
+    background-image: url(files/ManCity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.special2 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #EDE5F0;
+    overflow: auto;
+    padding: 0.3rem 0.5rem;
+}
+.special3 {
+    background-image: url(files/);
+}
+.special4 {
+    background-color: #A681BC;
+}
+.special5 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #CCEFEB;
+}
+.special6 {
+    background-color: #CCEFEB;
+}
+.special7 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: #EDE5F0;
+}
+.special8 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+.special9 {
+    background-color: #A681BC;
+}
+.special10 {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    background-color: #6E8DC7;
+}
