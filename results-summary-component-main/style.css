@@ -1,3 +1,66 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: HankenGrotesk;
+}
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  }
 main {
     border: 1px purple solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 15rem;
+    padding: 0;
+}
+.result-container {
+    border: 1px aqua solid;
+    background-image: linear-gradient(to top,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 5%;
+    color: white;
+    width: 30rem;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.result-score-container {
+    background-color: hsla(256, 72%, 46%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+/* Wraps summary and continue button */
+.summary-continue-container {
+    border: 1px black solid;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    min-width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Sets the display for summary results divs*/
+.reaction-results, .memory-results, .verbal-results, .visual-results {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+p {
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 375px) {
+    main {
+        flex-direction: column;
+    }
 }
