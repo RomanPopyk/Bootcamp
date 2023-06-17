@@ -1,63 +1,108 @@
-body {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: HankenGrotesk;
-}
 @font-face {
     font-family: HankenGrotesk;
     src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
   }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: HankenGrotesk;
+    font-size: 1.1rem;
+}
 main {
     border: 1px purple solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem 15rem;
-    padding: 0;
+    /* margin: 10rem 15rem; */
+    /* padding: 0; */
 }
+/* Wraps left column containing results*/
 .result-container {
     border: 1px aqua solid;
     background-image: linear-gradient(to top,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     border-radius: 5%;
     color: white;
-    width: 30rem;
+    width: 100%;
     min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 1rem 0;
 }
+.result-container h2 {
+    font-size: 1.1rem;
+    color: hsl(241, 100%, 89%);
+}
+/* Wraps the ball with the main score */
 .result-score-container {
-    background-color: hsla(256, 72%, 46%, 1);
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin: 0.5rem 0;
     border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
+    transition: all ease-in-out 0.2s;
+}
+.result-score-container:hover {
+    transform: scale(1.05);
+}
+.result-score-container-score {
+    color: hsl(0, 0%, 100%);
+    font-size: 3.3rem;
+    font-weight: 800;
+}
+.result-score-container-out_of {
+    color:  hsl(241, 100%, 89%);
+}
+/* Styling for text paragraphs with results*/
+.result-container h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.result-container p {
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 /* Wraps summary and continue button */
 .summary-continue-container {
     border: 1px black solid;
-    display: column;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 100%;
     min-width: 200px;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+}
+/* styling for summary header */
+.summary-container h2 {
+    font-size: 1.1rem;
+    color: hsl(224, 30%, 27%);
+    margin: -1rem 0 1rem 0;
 }
 /* Sets the display for summary results divs*/
-.reaction-results, .memory-results, .verbal-results, .visual-results {
+.summary-skill-block {
     display: flex;
-    justify-content: space-around;
-    align-items: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all ease-in-out 0.2s;
 }
-p {
-    font-size: 1.1rem;
+.summary-skill-block:hover {
+    transform: scale(1.05);
 }
 @media screen and (max-width: 375px) {
     main {
