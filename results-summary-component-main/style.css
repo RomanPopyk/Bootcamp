@@ -10,12 +10,13 @@ body {
     font-size: 1.1rem;
 }
 main {
-    border: 1px purple solid;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.05);
     margin: 10vh 20vw;
     padding: 0;
+    border-radius: 3%;
 }
 /* Wraps left column containing results*/
 .result-container {
@@ -73,10 +74,8 @@ main {
 }
 /* Wraps summary and continue button */
 .summary-continue-container {
-    border: 1px black solid;
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
     width: 100%;
     min-width: 200px;
     height: 100%;
@@ -102,6 +101,11 @@ main {
 }
 .summary-skill-block:hover {
     transform: scale(1.05);
+}
+.summary-skill-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 /* Sets the styling for summary results divs individually */
 .reaction-results {
@@ -166,7 +170,12 @@ main {
 @media screen and (max-width: 375px) {
     main {
         flex-direction: column;
+        box-shadow: none;
         margin: 0;
         padding: 0;
+        width: 100%;
+    }
+    .result-container {
+        width: 100%;
     }
 }
