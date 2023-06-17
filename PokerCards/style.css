@@ -1,0 +1,110 @@
+.body {
+    background-image: url("/Bootcamp/PokerCards/files/card_table.png");
+}
+main {
+    margin: 15rem 15rem;
+    display: flex;
+    position: relative;
+    background-image: url("/Bootcamp/PokerCards/files/card_table.png");
+}
+.card {
+    background-color: white;
+    padding: 3rem;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 4rem;
+    height: 8rem;
+    box-shadow: 2px 6px 10px 1px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0 10px 8px 0 rgba(252, 177, 4, 0.9);
+}
+.card:nth-child(1) {
+    position: absolute;
+    transform: translate(100px, -40px) rotate(-20deg);
+    transition: all ease-in-out 0.4s;
+}
+.card:nth-child(1):hover {
+    position: absolute;
+    transform: translate(0 -40px) rotate(-12deg);
+    z-index: 10;
+}
+.card:nth-child(2) {
+    position: absolute;
+    transform: translate(200px, -5px) rotate(-10deg);
+    transition: all ease-in-out 0.4s;
+}
+.card:nth-child(2):hover {
+    transform: translate(200px, -40px) rotate(-10deg);
+    z-index: 10;
+}
+.card:nth-child(3) {
+    position: absolute;
+    transform: translate(300px, -40px) rotate(0deg);
+    transition: all ease-in-out 0.4s;
+}
+.card:nth-child(3):hover {
+    position: absolute;
+    transform: translate(300px, -40px) rotate(0deg);
+    z-index: 10;
+}
+.card:nth-child(4) {
+    position: absolute;
+    transform: translate(400px, -10px) rotate(14deg);
+    transition: all ease-in-out 0.4s;
+}
+.card:nth-child(4):hover {
+    position: absolute;
+    transform: translate(400px, -60px) rotate(14deg);
+    z-index: 10;
+}
+.card:nth-child(5) {
+    position: absolute;
+    transform: translate(500px, 40px) rotate(20deg);
+    transition: all ease-in-out 0.4s;
+}
+.card:nth-child(5):hover {
+    position: absolute;
+    transform: translate(500px, -40px) rotate(20deg);
+    z-index: 10;
+}
+.rank {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.suit {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+}
+.spades {
+    color: black;
+}
+.clubs {
+    color: black;
+}
+.hearts {
+    color: red;
+}
+.diamonds {
+    color: red;
+}
+.spotA1 { position: absolute; left: 0.60em; top: 0.5em; }
+.spotA2 { position: absolute; left: 0.60em; top: 1.5em; }
+.spotA3 { position: absolute; left: 0.60em; top: 2.0em; }
+.spotA4 { position: absolute; left: 0.60em; top: 2.5em; }
+.spotA5 { position: absolute; left: 0.60em; top: 3.5em; }
+.spotB1 { position: absolute; left: 1.55em; top: 0.5em; }
+.spotB2 { position: absolute; left: 1.55em; top: 1.0em; }
+.spotB3 { position: absolute; left: 1.55em; top: 2.0em; }
+.spotB4 { position: absolute; left: 1.55em; top: 3.0em; }
+.spotB5 { position: absolute; left: 1.55em; top: 3.5em; }
+.spotC1 { position: absolute; left: 2.50em; top: 0.5em; }
+.spotC2 { position: absolute; left: 2.50em; top: 1.5em; }
+.spotC3 { position: absolute; left: 2.50em; top: 2.0em; }
+.spotC4 { position: absolute; left: 2.50em; top: 2.5em; }
+.spotC5 { position: absolute; left: 2.50em; top: 3.5em; }
