@@ -1,11 +1,12 @@
-.body {
-    background-image: url("/Bootcamp/PokerCards/files/card_table.png");
+body {
+    background-image: url("/Bootcamp/PokerCards/files/card_table2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 main {
     margin: 15rem 15rem;
     display: flex;
     position: relative;
-    background-image: url("/Bootcamp/PokerCards/files/card_table.png");
 }
 .card {
     background-color: white;
