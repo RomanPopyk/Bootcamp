@@ -2,10 +2,15 @@ body {
     background-image: url("/Bootcamp/PokerCards/files/card_table2.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 main {
-    margin: 15rem 15rem;
+    margin: 10rem 15rem;
     display: flex;
+    /* align-items: center;
+    justify-content: center; */
     position: relative;
 }
 .card {
@@ -24,22 +29,21 @@ main {
 }
 .card:nth-child(1) {
     position: absolute;
-    transform: translate(100px, -40px) rotate(-20deg);
+    transform: translate(100px, 35px) rotate(-20deg);
     transition: all ease-in-out 0.4s;
 }
 .card:nth-child(1):hover {
     position: absolute;
-    transform: translate(0 -40px) rotate(-12deg);
-    z-index: 10;
+    transform: translate(100px, -10px) rotate(-20deg);
 }
 .card:nth-child(2) {
     position: absolute;
-    transform: translate(200px, -5px) rotate(-10deg);
+    transform: translate(200px, -10px) rotate(-10deg);
     transition: all ease-in-out 0.4s;
 }
 .card:nth-child(2):hover {
-    transform: translate(200px, -40px) rotate(-10deg);
-    z-index: 10;
+    position: absolute;
+    transform: translate(200px, -50px) rotate(-10deg);
 }
 .card:nth-child(3) {
     position: absolute;
@@ -48,18 +52,16 @@ main {
 }
 .card:nth-child(3):hover {
     position: absolute;
-    transform: translate(300px, -40px) rotate(0deg);
-    z-index: 10;
+    transform: translate(300px, -70px) rotate(0deg);
 }
 .card:nth-child(4) {
     position: absolute;
-    transform: translate(400px, -10px) rotate(14deg);
+    transform: translate(400px, -10px) rotate(10deg);
     transition: all ease-in-out 0.4s;
 }
 .card:nth-child(4):hover {
     position: absolute;
-    transform: translate(400px, -60px) rotate(14deg);
-    z-index: 10;
+    transform: translate(400px, -50px) rotate(10deg);
 }
 .card:nth-child(5) {
     position: absolute;
@@ -68,16 +70,17 @@ main {
 }
 .card:nth-child(5):hover {
     position: absolute;
-    transform: translate(500px, -40px) rotate(20deg);
-    z-index: 10;
+    transform: translate(500px, -10px) rotate(20deg);
 }
 .rank {
+    font-weight: 700;
+    font-size: 1.5rem;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 0.8rem;
+    left: 0.8rem;
 }
 .suit {
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: absolute;
     top: 2rem;
     left: 1rem;
@@ -109,3 +112,8 @@ main {
 .spotC3 { position: absolute; left: 2.50em; top: 2.0em; }
 .spotC4 { position: absolute; left: 2.50em; top: 2.5em; }
 .spotC5 { position: absolute; left: 2.50em; top: 3.5em; }
+
+.small-suit-logo {
+    margin: 0.3rem 0;
+    font-size: 1.5rem;
+}
