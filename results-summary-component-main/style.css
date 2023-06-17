@@ -14,12 +14,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 10rem 15rem; */
-    /* padding: 0; */
+    margin: 10vh 20vw;
+    padding: 0;
 }
 /* Wraps left column containing results*/
 .result-container {
-    border: 1px aqua solid;
     background-image: linear-gradient(to top,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     border-radius: 5%;
     color: white;
@@ -90,7 +89,7 @@ main {
     color: hsl(224, 30%, 27%);
     margin: -1rem 0 1rem 0;
 }
-/* Sets the display for summary results divs*/
+/* Sets the styling for all summary results divs*/
 .summary-skill-block {
     display: flex;
     justify-content: space-between;
@@ -104,8 +103,70 @@ main {
 .summary-skill-block:hover {
     transform: scale(1.05);
 }
+/* Sets the styling for summary results divs individually */
+.reaction-results {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.reaction-results-title {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+.memory-results {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.memory-results-title {
+    color: hsla(39, 100%, 56%, 1);
+    font-weight: 700;
+}
+.verbal-results {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.verbal-results-title {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+.visual-results {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.visual-results-title {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+.summary-score {
+    color: hsl(300, 5%, 55%);
+}
+.summary-score span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+/* Styling for button */
+.continue-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.continue-container button {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family: HankenGrotesk;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.continue-container button:hover {
+    background-color: hsl(241, 81%, 54%);
+    transform: scale(1.05);
+}
+/* For mobile phones */
 @media screen and (max-width: 375px) {
     main {
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 }
