@@ -1,0 +1,18 @@
+:root {
+    --primary-tomato: hsl(4, 100%, 67%);
+    --primary-red: hsl(-14, 100%, 67%);
+    --primary-tomato-light: hsl(4, 100%, 79%);
+    --primary-tomato-lighter: hsl(4, 100%, 97%);
+
+    --neutral-dark-slate-grey: hsl(234, 29%, 20%);
+    --neutral-charcoal-grey: hsl(235, 18%, 26%);
+    --neutral-grey: hsl(231, 7%, 60%);
+    --neutral-charcoal-grey-light: hsl(235, 18%, 80%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --ft-primary: "Roboto", sans-serif;
+    --ft-size-primary: calc(16 / 16 * 1rem);
+    --ft-weight-normal: 400;
+    --ft-weight-bold: 700;
+    --spacing: 8px;
+}
