@@ -113,9 +113,9 @@ main {
     align-self: end;
     height: fit-content;
 }
-/* p {
+p {
     line-height: 1.5;
-} */
+}
 /* Button styling */
 button, .subscribe-button {
     cursor: pointer;
@@ -133,8 +133,74 @@ button:hover, .subscribe-button:hover {
     background-image: linear-gradient(to right, var(--primary-red), var(--primary-tomato));
     box-shadow: 0 10px 30px -5px var(--primary-tomato);
 }
+/* .max-width-wrapper {
+    margin-right: auto; 
+    margin-left: auto; 
+
+    max-width: 1150px; 
+
+    padding-right: 16px;
+    padding-left: 16px; 
+}
+.reveal-nav {
+    display: flex;
+    transform: translateX(0%);
+}
+
+.hidden {
+    display: none;
+} */
 @media screen and (max-width: 375px) {
     .newsletter {
         flex-direction: column-reverse;
+    }
+}
+@media (min-width: 62rem) {
+    main {
+        background-color: var(--neutral-dark-slate-grey);
+        display: grid;
+        place-content: center;
+    }
+    .newsletter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(var(--spacing) * 8);
+        background-color: var(--neutral-white);
+        max-width: 1000px;
+        padding: calc(var(--spacing) * 3);
+        padding-left: calc(var(--spacing) * 8);
+        border-radius: 48px;
+        font-size: calc(18 / 16 * 1rem);
+    }
+    .newsletter-content,
+    .newsletter picture {
+        flex: 1;
+    }
+    .newsletter-content {
+        padding: 0;
+        align-self: center;
+    }
+    .newsletter-title,
+    .hidden-success-window-title {
+        font-size: 4rem;
+    }
+    .newsletter-title,
+    .newsletter-text {
+        margin-bottom: calc(var(--spacing) * 4);
+    }
+    .email-input {
+        padding: 16px 24px;
+    }
+    .hidden-success-window {
+        background-color: var(--neutral-white);
+        padding: 0;
+        padding: calc(var(--spacing) * 8);
+        padding-top: calc(var(--spacing) * 6);
+        border-radius: 48px;
+        max-width: 550px;
+        font-size: calc(18 / 16 * 1rem);
+    }
+    .success-text {
+        margin-bottom: calc(var(--spacing) * 5);
     }
 }
